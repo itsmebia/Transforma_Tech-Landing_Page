@@ -2,7 +2,7 @@
 
 * {
     padding: 0;
-    border: 0;
+    margin: 0;
     text-decoration: none;
     font-family: "Raleway";
 }
@@ -14,13 +14,14 @@
     align-items: center;
     height: 80vh;
     padding: 5vh 0;
-    background-image: url("assets/images/banner.png");
-    background: linear-gradient(90deg, rgba(21, 100, 114, 0.3) 50%, rgba(1, 7, 8, 0.3) 50%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 47, 85, 0.8) 25%, rgba(0, 47, 85, 0.8) 50%, rgba(0, 47, 85, 0.8) 75%, rgba(0, 0, 0, 0.9) 100%), url("assets/images/banner.png");
+    
 
     & img {
-        background-color: rgba(0, 0, 0, 0.575);
-        border-radius: 50%;
-        padding: 1vh;
+        background-color: rgba(0, 0, 0, 0.164);
+        border-radius: 100%;
+        padding: 2vh;
+        margin: 2vh auto;
     }
 
     & h1 {
@@ -33,23 +34,53 @@
     }
 
     & p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 3vh auto;
-        padding: 10vh auto;
+        display: block;
+        max-width: 80%;
+        width: 50%;
+        margin: 0 auto 4vh;
+        padding: 4vh;
         font-weight: 400;
         color: white;
+        text-align: center;
     }
-
 
     & button {
         background: none;
+        width: 50%;
+        max-width: 80%;
         font-weight: 900;
+        font-size: medium;
+        letter-spacing: 3px;
         text-transform: uppercase;
         padding: 4vh 10vh;
         color: #31A8DD;
         border: 2px solid;
         border-style: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
 
+    }
+}
+
+#course-content {
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+
+    & h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #33A8DB;
+        letter-spacing: 2px;
+    }
+
+    & p {
+        display: block;
+        max-width: 80%;
+        width: 50%;
+        margin: 0 auto 4vh;
+        padding: 4vh;
+        font-weight: 400;
+        color: white;
+        text-align: center;
     }
 }
